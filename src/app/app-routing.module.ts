@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'masteradmin', component: MasteradminComponent, canActivate: [AuthGuard] }, // route ไปหน้าหลักกองพัฒ
   { path: 'adduser', component: AdduserComponent, canActivate: [AuthGuard] }, // route ไปหน้าเพิ่ม user ของกองพัฒ
   { path: 'fcapconfirm/:id', component: FacultyCapconfirmComponent, canActivate: [AuthGuard] }, // route ไปหน้าเพิ่ม user ของคณะเพื่อยืนยันสมรรถนะ
-  { path: '**', redirectTo: '/selectlogin' }, // หากใส่ url ไม่ถูกต้องจะทำการ Redirect ไป หน้าเลือกการ Login 
+  { path: '**', redirectTo: '/login' }, // หากใส่ url ไม่ถูกต้องจะทำการ Redirect ไป หน้าเลือกการ Login 
 
 ];
 
